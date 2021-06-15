@@ -1,0 +1,3662 @@
+{
+    "frameRate": 24,
+    "armature": [
+        {
+            "ik": [],
+            "type": "Armature",
+            "name": "Armature",
+            "animation": [
+                {
+                    "ffd": [],
+                    "playTimes": 0,
+                    "ik": [],
+                    "duration": 12,
+                    "frame": [],
+                    "bone": [
+                        {
+                            "rotateFrame": [],
+                            "name": "biaoqiangbing",
+                            "translateFrame": [],
+                            "scaleFrame": []
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6,
+                                    "rotate": 2.8373
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shenti",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "name": "yingzi",
+                            "translateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": 6.6147
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "tou",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "y": 0.4155,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": 1.2049
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": 8.1796
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou1",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": -2.5601
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou2",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "y": 0.7953,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": 2.9824
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "name": "jiao1",
+                            "translateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "name": "jiao2",
+                            "translateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "name": "wuqi",
+                            "translateFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "duration": 12
+                                }
+                            ]
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "影子"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内手"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "身体"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "武器"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "头"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外手"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "ffd": [],
+                    "playTimes": 0,
+                    "ik": [],
+                    "duration": 12,
+                    "frame": [],
+                    "bone": [
+                        {
+                            "rotateFrame": [],
+                            "name": "biaoqiangbing",
+                            "translateFrame": [],
+                            "scaleFrame": []
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -5.5369
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 13.49
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -5.5369
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 13.49
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": -5.5369
+                                }
+                            ],
+                            "name": "shenti",
+                            "translateFrame": [
+                                {
+                                    "y": -1.6069,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": 2.1856,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 1.79
+                                },
+                                {
+                                    "y": -1.6069,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": 2.1856,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 1.79
+                                },
+                                {
+                                    "y": -1.6069,
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "yingzi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 5.7628
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -9.4435
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 5.7628
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -9.4435
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 5.7628
+                                }
+                            ],
+                            "name": "tou",
+                            "translateFrame": [
+                                {
+                                    "y": -0.0725,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 1.8124
+                                },
+                                {
+                                    "y": -0.7012,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 0.8134
+                                },
+                                {
+                                    "y": -1.2775,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 1.1392
+                                },
+                                {
+                                    "y": -0.7012,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 0.8134
+                                },
+                                {
+                                    "y": -0.0725,
+                                    "duration": 0,
+                                    "x": 1.8124
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 0.3311
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -7.834
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -30.1979
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -30.7273
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 0.3311
+                                }
+                            ],
+                            "name": "shou1",
+                            "translateFrame": [
+                                {
+                                    "y": 0.1461,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -4.6745
+                                },
+                                {
+                                    "y": 0.4528,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 2.7935
+                                },
+                                {
+                                    "y": 0.737,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 7.9183
+                                },
+                                {
+                                    "y": 0.4528,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 2.7935
+                                },
+                                {
+                                    "y": 0.1461,
+                                    "duration": 0,
+                                    "x": -4.6745
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -21.7962
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -9.0849
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 71.6595
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -9.0849
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": -21.7962
+                                }
+                            ],
+                            "name": "shou2",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 4.3824
+                                },
+                                {
+                                    "y": -0.4095,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -1.9091
+                                },
+                                {
+                                    "y": -0.4404,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -10.9364
+                                },
+                                {
+                                    "y": -0.4095,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -1.9091
+                                },
+                                {
+                                    "duration": 0,
+                                    "x": 4.3824
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -26.7787
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 63.7768
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 75.2854
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "jiao1",
+                            "translateFrame": [
+                                {
+                                    "y": -3.4214,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 6.6425
+                                },
+                                {
+                                    "y": -0.9944,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 6.1823
+                                },
+                                {
+                                    "y": -0.1751,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -1.783
+                                },
+                                {
+                                    "y": -1.9672,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 0.4318
+                                },
+                                {
+                                    "y": -3.4214,
+                                    "duration": 0,
+                                    "x": 6.6425
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 22.1126
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": 35.9358
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -17.0649
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "rotate": -11.8122
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 22.1126
+                                }
+                            ],
+                            "name": "jiao2",
+                            "translateFrame": [
+                                {
+                                    "y": 2.2285,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -7.0259
+                                },
+                                {
+                                    "y": -3.5384,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": -0.3715
+                                },
+                                {
+                                    "y": -0.2668,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 1.7804
+                                },
+                                {
+                                    "y": -0.3158,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3,
+                                    "x": 0.461
+                                },
+                                {
+                                    "y": 2.2285,
+                                    "duration": 0,
+                                    "x": -7.0259
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "wuqi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "影子"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内手"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "身体"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "武器"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "头"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外手"
+                        }
+                    ],
+                    "name": "walk"
+                },
+                {
+                    "ffd": [],
+                    "playTimes": 0,
+                    "ik": [],
+                    "duration": 8,
+                    "frame": [],
+                    "bone": [
+                        {
+                            "rotateFrame": [],
+                            "name": "biaoqiangbing",
+                            "translateFrame": [],
+                            "scaleFrame": []
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": -10.4658
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": 21.2495
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": 23.5268
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shenti",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": -2.3066
+                                },
+                                {
+                                    "y": 0.3622,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 3.3927
+                                },
+                                {
+                                    "y": 0.3622,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 3.3927
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "yingzi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": 8.2089
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -5.0657
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -3.9514
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "tou",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": 0.3539,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": -2.9292
+                                },
+                                {
+                                    "y": 0.3467,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 2.5897
+                                },
+                                {
+                                    "y": 0.3467,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 2.5897
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": -28.9501
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -24.472
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -27.8671
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou1",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": -0.189,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": -7.2875
+                                },
+                                {
+                                    "y": -9.4302,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 3.1142
+                                },
+                                {
+                                    "y": -0.854,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 12.7514
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": -44.8771
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -18.8181
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -18.8181
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou2",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": 1.295,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": -3.099
+                                },
+                                {
+                                    "y": -0.1875,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 1.4816
+                                },
+                                {
+                                    "y": -0.1875,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 1.4816
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": 14.5154
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -19.6229
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -21.6898
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "jiao1",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": -0.1019,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": 1.8412
+                                },
+                                {
+                                    "y": 2.213,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": -0.694
+                                },
+                                {
+                                    "y": 2.213,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": -0.694
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "rotate": 8.2874
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -21.6683
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "rotate": -21.8538
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "jiao2",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "y": -1.9533,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1,
+                                    "x": 1.1068
+                                },
+                                {
+                                    "y": -0.5745,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 1.8105
+                                },
+                                {
+                                    "y": -0.8073,
+                                    "tweenEasing": 0,
+                                    "duration": 2,
+                                    "x": 1.6714
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 3
+                                },
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "wuqi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "影子"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内手"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "身体"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外脚"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "duration": 4
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "武器"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "头"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外手"
+                        }
+                    ],
+                    "name": "attk"
+                },
+                {
+                    "ffd": [],
+                    "playTimes": 0,
+                    "ik": [],
+                    "duration": 6,
+                    "frame": [],
+                    "bone": [
+                        {
+                            "rotateFrame": [],
+                            "name": "biaoqiangbing",
+                            "translateFrame": [],
+                            "scaleFrame": []
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": -16.6894
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shenti",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": -3.4677
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "yingzi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": -19.0434
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "tou",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": 10.1391
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou1",
+                            "translateFrame": [
+                                {
+                                    "y": -0.3433,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": -3.008
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": -50.9236
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "shou2",
+                            "translateFrame": [
+                                {
+                                    "y": 0.0904,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": 2.6596
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": 18.0116
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "jiao1",
+                            "translateFrame": [
+                                {
+                                    "y": 0.1689,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": -1.1819
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "rotate": 27.0864
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "jiao2",
+                            "translateFrame": [
+                                {
+                                    "y": 1.6864,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6,
+                                    "x": 0.9084
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "wuqi",
+                            "translateFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "影子"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内手"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "身体"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "头"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "武器"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外手"
+                        }
+                    ],
+                    "name": "hurt"
+                },
+                {
+                    "ffd": [],
+                    "playTimes": 0,
+                    "ik": [],
+                    "duration": 14,
+                    "frame": [],
+                    "bone": [
+                        {
+                            "rotateFrame": [],
+                            "name": "biaoqiangbing",
+                            "translateFrame": [],
+                            "scaleFrame": []
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": -16.6894
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": -90.1498
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": -81.8099
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": -81.8099
+                                }
+                            ],
+                            "name": "shenti",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "x": -3.4677
+                                },
+                                {
+                                    "y": 3.5605,
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "x": -5.6742
+                                },
+                                {
+                                    "y": 5.7109,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": -5.6742
+                                },
+                                {
+                                    "y": 5.7109,
+                                    "duration": 0,
+                                    "x": -5.6742
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "yingzi",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": -19.0434
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": -19.0434
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": -19.0434
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": -19.0434
+                                }
+                            ],
+                            "name": "tou",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": 10.1391
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": 88.0812
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": 120.4528
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 120.4528
+                                }
+                            ],
+                            "name": "shou1",
+                            "translateFrame": [
+                                {
+                                    "y": -0.3433,
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "x": -3.008
+                                },
+                                {
+                                    "y": -2.3093,
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "x": 0.5863
+                                },
+                                {
+                                    "y": -0.5343,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": -9.0411
+                                },
+                                {
+                                    "y": -0.5343,
+                                    "duration": 0,
+                                    "x": -9.0411
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": -50.9236
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": -5.5837
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": -5.5837
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": -5.5837
+                                }
+                            ],
+                            "name": "shou2",
+                            "translateFrame": [
+                                {
+                                    "y": 0.0904,
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "x": 2.6596
+                                },
+                                {
+                                    "y": -2.9567,
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "x": -0.7623
+                                },
+                                {
+                                    "y": -1.4265,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": -5.5825
+                                },
+                                {
+                                    "y": -1.4265,
+                                    "duration": 0,
+                                    "x": -5.5825
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": 18.0116
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": 18.0116
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": 45.6121
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 45.6121
+                                }
+                            ],
+                            "name": "jiao1",
+                            "translateFrame": [
+                                {
+                                    "y": 0.1689,
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "x": -1.1819
+                                },
+                                {
+                                    "y": 0.1689,
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "x": -1.1819
+                                },
+                                {
+                                    "y": 3.1397,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": 1.3097
+                                },
+                                {
+                                    "y": 3.1397,
+                                    "duration": 0,
+                                    "x": 1.3097
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "rotate": 27.0864
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "rotate": 27.0864
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "rotate": 47.7619
+                                },
+                                {
+                                    "duration": 0,
+                                    "rotate": 47.7619
+                                }
+                            ],
+                            "name": "jiao2",
+                            "translateFrame": [
+                                {
+                                    "y": 1.6864,
+                                    "tweenEasing": 0,
+                                    "duration": 4,
+                                    "x": 0.9084
+                                },
+                                {
+                                    "y": 1.6864,
+                                    "tweenEasing": 0,
+                                    "duration": 3,
+                                    "x": 0.9084
+                                },
+                                {
+                                    "y": 2.8724,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": 0.9705
+                                },
+                                {
+                                    "y": 2.8724,
+                                    "duration": 0,
+                                    "x": 0.9705
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "wuqi",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 3
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "影子"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内手"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "内脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "身体"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外脚"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "头"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "武器"
+                        },
+                        {
+                            "colorFrame": [],
+                            "displayFrame": [],
+                            "name": "外手"
+                        }
+                    ],
+                    "name": "die"
+                }
+            ],
+            "bone": [
+                {
+                    "name": "biaoqiangbing",
+                    "transform": {}
+                },
+                {
+                    "transform": {
+                        "y": -8.3216,
+                        "x": -0.6356
+                    },
+                    "name": "shenti",
+                    "parent": "biaoqiangbing"
+                },
+                {
+                    "transform": {},
+                    "name": "yingzi",
+                    "parent": "biaoqiangbing"
+                },
+                {
+                    "transform": {
+                        "y": -3.5011,
+                        "skX": -93.5784,
+                        "skY": -93.5784,
+                        "x": 0.0468
+                    },
+                    "name": "tou",
+                    "parent": "shenti"
+                },
+                {
+                    "length": 1,
+                    "transform": {
+                        "y": -4.7043,
+                        "skX": 49.5208,
+                        "skY": 49.5208,
+                        "x": -1.9249
+                    },
+                    "parent": "shenti",
+                    "name": "shou1"
+                },
+                {
+                    "length": 1,
+                    "transform": {
+                        "y": 6.931,
+                        "skX": 86.9059,
+                        "skY": 86.9059,
+                        "x": -2.8261
+                    },
+                    "parent": "shenti",
+                    "name": "jiao1"
+                },
+                {
+                    "length": 1,
+                    "transform": {
+                        "y": 6.0468,
+                        "skX": 90,
+                        "skY": 90,
+                        "x": 3.8066
+                    },
+                    "parent": "shenti",
+                    "name": "jiao2"
+                },
+                {
+                    "length": 2,
+                    "transform": {
+                        "y": 0.2057,
+                        "skX": 66.6846,
+                        "skY": 66.6846,
+                        "x": 5.4957
+                    },
+                    "parent": "shenti",
+                    "name": "shou2"
+                },
+                {
+                    "length": 1,
+                    "transform": {
+                        "y": 11.2558,
+                        "skX": -90.0287,
+                        "skY": -90.0287,
+                        "x": 0.2689
+                    },
+                    "parent": "shou1",
+                    "name": "wuqi"
+                }
+            ],
+            "aabb": {
+                "width": 31,
+                "y": -38.79733212980133,
+                "height": 49.29733212980133,
+                "x": -15.5
+            },
+            "slot": [
+                {
+                    "name": "影子",
+                    "parent": "yingzi",
+                    "color": {}
+                },
+                {
+                    "z": 1,
+                    "name": "内手",
+                    "parent": "shou2",
+                    "color": {}
+                },
+                {
+                    "z": 2,
+                    "name": "内脚",
+                    "parent": "jiao2",
+                    "color": {}
+                },
+                {
+                    "z": 3,
+                    "name": "身体",
+                    "parent": "shenti",
+                    "color": {}
+                },
+                {
+                    "z": 4,
+                    "name": "外脚",
+                    "parent": "jiao1",
+                    "color": {}
+                },
+                {
+                    "z": 5,
+                    "name": "头",
+                    "parent": "tou",
+                    "color": {}
+                },
+                {
+                    "z": 6,
+                    "name": "武器",
+                    "parent": "wuqi",
+                    "color": {}
+                },
+                {
+                    "z": 7,
+                    "name": "外手",
+                    "parent": "shou1",
+                    "color": {}
+                }
+            ],
+            "frameRate": 24,
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "idle"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "display": [
+                                {
+                                    "path": "内脚",
+                                    "type": "image",
+                                    "name": "内脚",
+                                    "transform": {
+                                        "skX": -90,
+                                        "skY": -90
+                                    }
+                                }
+                            ],
+                            "name": "内脚"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "身体",
+                                    "type": "image",
+                                    "name": "身体",
+                                    "transform": {}
+                                }
+                            ],
+                            "name": "身体"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "内手",
+                                    "type": "image",
+                                    "name": "内手",
+                                    "transform": {
+                                        "skX": -93.5035,
+                                        "skY": -93.5035
+                                    }
+                                }
+                            ],
+                            "name": "内手"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "影子",
+                                    "type": "image",
+                                    "name": "影子",
+                                    "transform": {}
+                                }
+                            ],
+                            "name": "影子"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "武器",
+                                    "type": "image",
+                                    "name": "武器",
+                                    "transform": {
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "x": 11.7443
+                                    }
+                                }
+                            ],
+                            "name": "武器"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "外手",
+                                    "type": "image",
+                                    "name": "外手",
+                                    "transform": {
+                                        "skX": -90,
+                                        "skY": -90
+                                    }
+                                }
+                            ],
+                            "name": "外手"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "头",
+                                    "type": "image",
+                                    "name": "头",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 13
+                                    }
+                                }
+                            ],
+                            "name": "头"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "外脚",
+                                    "type": "image",
+                                    "name": "外脚",
+                                    "transform": {
+                                        "skX": -86.9059,
+                                        "skY": -86.9059
+                                    }
+                                }
+                            ],
+                            "name": "外脚"
+                        }
+                    ],
+                    "name": ""
+                }
+            ]
+        }
+    ],
+    "isGlobal": 0,
+    "name": "biaoqiangbing",
+    "version": "5.5"
+}

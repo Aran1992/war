@@ -1,23 +1,170 @@
 {
-	"groups":[
-	{
-		"keys":"bg_jpg,egret_icon_png,description_json",
-		"name":"preload"
-	}],
-	"resources":[
-	{
-		"name":"bg_jpg",
-		"type":"image",
-		"url":"assets/bg.jpg"
-	},
-	{
-		"name":"egret_icon_png",
-		"type":"image",
-		"url":"assets/egret_icon.png"
-	},
-	{
-		"name":"description_json",
-		"type":"json",
-		"url":"config/description.json"
-	}]
+	"groups": [
+		{
+			"keys": "jian_png,shitou_png,biaoqiangbing_ske_json,biaoqiangbing_tex_json,biaoqiangbing_tex_png,bubing1_ske_json,bubing1_tex_json,bubing1_tex_png,DF-biaoqiangbing_ske_json,DF-biaoqiangbing_tex_json,DF-biaoqiangbing_tex_png,DF-bubing1_ske_json,DF-bubing1_tex_json,DF-bubing1_tex_png,DF-gongjianshou1_ske_json,DF-gongjianshou1_tex_json,DF-gongjianshou1_tex_png,DF-minbing1_ske_json,DF-minbing1_tex_json,DF-minbing1_tex_png,DF-toushiche1_ske_json,DF-toushiche1_tex_json,DF-toushiche1_tex_png,gongjianshou1_ske_json,gongjianshou1_tex_json,gongjianshou1_tex_png,minbing1_ske_json,minbing1_tex_json,minbing1_tex_png,toushiche1_ske_json,toushiche1_tex_json,toushiche1_tex_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "jian_png",
+			"type": "image",
+			"url": "assets/jian.png"
+		},
+		{
+			"name": "shitou_png",
+			"type": "image",
+			"url": "assets/shitou.png"
+		},
+		{
+			"name": "biaoqiangbing_ske_json",
+			"type": "json",
+			"url": "assets/biaoqiangbing/biaoqiangbing_ske.json"
+		},
+		{
+			"name": "biaoqiangbing_tex_json",
+			"type": "json",
+			"url": "assets/biaoqiangbing/biaoqiangbing_tex.json"
+		},
+		{
+			"name": "biaoqiangbing_tex_png",
+			"type": "image",
+			"url": "assets/biaoqiangbing/biaoqiangbing_tex.png"
+		},
+		{
+			"name": "bubing1_ske_json",
+			"type": "json",
+			"url": "assets/bubing1/bubing1_ske.json"
+		},
+		{
+			"name": "bubing1_tex_json",
+			"type": "json",
+			"url": "assets/bubing1/bubing1_tex.json"
+		},
+		{
+			"name": "bubing1_tex_png",
+			"type": "image",
+			"url": "assets/bubing1/bubing1_tex.png"
+		},
+		{
+			"name": "DF-biaoqiangbing_ske_json",
+			"type": "json",
+			"url": "assets/DF-biaoqiangbing/DF-biaoqiangbing_ske.json"
+		},
+		{
+			"name": "DF-biaoqiangbing_tex_json",
+			"type": "json",
+			"url": "assets/DF-biaoqiangbing/DF-biaoqiangbing_tex.json"
+		},
+		{
+			"name": "DF-biaoqiangbing_tex_png",
+			"type": "image",
+			"url": "assets/DF-biaoqiangbing/DF-biaoqiangbing_tex.png"
+		},
+		{
+			"name": "DF-bubing1_ske_json",
+			"type": "json",
+			"url": "assets/DF-bubing1/DF-bubing1_ske.json"
+		},
+		{
+			"name": "DF-bubing1_tex_json",
+			"type": "json",
+			"url": "assets/DF-bubing1/DF-bubing1_tex.json"
+		},
+		{
+			"name": "DF-bubing1_tex_png",
+			"type": "image",
+			"url": "assets/DF-bubing1/DF-bubing1_tex.png"
+		},
+		{
+			"name": "DF-gongjianshou1_ske_json",
+			"type": "json",
+			"url": "assets/DF-gongjianshou1/DF-gongjianshou1_ske.json"
+		},
+		{
+			"name": "DF-gongjianshou1_tex_json",
+			"type": "json",
+			"url": "assets/DF-gongjianshou1/DF-gongjianshou1_tex.json"
+		},
+		{
+			"name": "DF-gongjianshou1_tex_png",
+			"type": "image",
+			"url": "assets/DF-gongjianshou1/DF-gongjianshou1_tex.png"
+		},
+		{
+			"name": "DF-minbing1_ske_json",
+			"type": "json",
+			"url": "assets/DF-minbing1/DF-minbing1_ske.json"
+		},
+		{
+			"name": "DF-minbing1_tex_json",
+			"type": "json",
+			"url": "assets/DF-minbing1/DF-minbing1_tex.json"
+		},
+		{
+			"name": "DF-minbing1_tex_png",
+			"type": "image",
+			"url": "assets/DF-minbing1/DF-minbing1_tex.png"
+		},
+		{
+			"name": "DF-toushiche1_ske_json",
+			"type": "json",
+			"url": "assets/DF-toushiche1/DF-toushiche1_ske.json"
+		},
+		{
+			"name": "DF-toushiche1_tex_json",
+			"type": "json",
+			"url": "assets/DF-toushiche1/DF-toushiche1_tex.json"
+		},
+		{
+			"name": "DF-toushiche1_tex_png",
+			"type": "image",
+			"url": "assets/DF-toushiche1/DF-toushiche1_tex.png"
+		},
+		{
+			"name": "gongjianshou1_ske_json",
+			"type": "json",
+			"url": "assets/gongjianshou1/gongjianshou1_ske.json"
+		},
+		{
+			"name": "gongjianshou1_tex_json",
+			"type": "json",
+			"url": "assets/gongjianshou1/gongjianshou1_tex.json"
+		},
+		{
+			"name": "gongjianshou1_tex_png",
+			"type": "image",
+			"url": "assets/gongjianshou1/gongjianshou1_tex.png"
+		},
+		{
+			"name": "minbing1_ske_json",
+			"type": "json",
+			"url": "assets/minbing1/minbing1_ske.json"
+		},
+		{
+			"name": "minbing1_tex_json",
+			"type": "json",
+			"url": "assets/minbing1/minbing1_tex.json"
+		},
+		{
+			"name": "minbing1_tex_png",
+			"type": "image",
+			"url": "assets/minbing1/minbing1_tex.png"
+		},
+		{
+			"name": "toushiche1_ske_json",
+			"type": "json",
+			"url": "assets/toushiche1/toushiche1_ske.json"
+		},
+		{
+			"name": "toushiche1_tex_json",
+			"type": "json",
+			"url": "assets/toushiche1/toushiche1_tex.json"
+		},
+		{
+			"name": "toushiche1_tex_png",
+			"type": "image",
+			"url": "assets/toushiche1/toushiche1_tex.png"
+		}
+	]
 }
