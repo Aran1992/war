@@ -8,12 +8,26 @@ function createId(): number {
     return id;
 }
 
+/**
+ * 返回的radian范围是在0-Math.PI*2区间
+ * @param radian
+ */
 function normalizeRadian(radian: number): number {
     radian %= Math.PI * 2;
     if (radian < 0) {
         radian += Math.PI * 2;
     }
     return radian;
+}
+
+function radian2angle(radian: number): number {
+    return radian / Math.PI * 180;
+}
+
+function drawLine(p1: Vector2, p2: Vector2, thickness = 1, color = 0x000000) {
+    // graphics.lineStyle(thickness, color);
+    // graphics.moveTo(p1.x, p1.y);
+    // graphics.lineTo(p2.x, p2.y);
 }
 
 class Vector2 {
@@ -51,12 +65,32 @@ class Vector2 {
     }
 
     public radian(): number {
-        // 如果是各零向量 那角度就算作是0吧
-        const length = this.length();
-        if (length === 0) {
-            return 0;
+        const x = this.x;
+        const y = this.y;
+        if (x > 0) {
+            if (y > 0) {
+                return Math.atan(y / x);
+            } else if (y < 0) {
+                return Math.atan(y / x);
+            } else {
+                return 0;
+            }
+        } else if (x < 0) {
+            if (y > 0) {
+                return Math.atan(y / x) + Math.PI;
+            } else if (y < 0) {
+                return Math.atan(y / x) + Math.PI;
+            } else {
+                return Math.PI;
+            }
         } else {
-            return Math.asin(this.y / length);
+            if (y > 0) {
+                return Math.PI / 2;
+            } else if (y < 0) {
+                return Math.PI / 2 * 3;
+            } else {
+                return 0;
+            }
         }
     }
 
@@ -67,9 +101,19 @@ class Vector2 {
 
 class Line {
     private readonly point: Vector2;
-    private readonly radian: number;
+    public readonly radian: number;
     private readonly k: number;
     private readonly b: number;
+
+    public static createLineByPointAndRadian(point: Vector2, radian: number): Line {
+        return new Line(point, radian);
+    }
+
+    public static createLineByTwoPoint(point0: Vector2, point1: Vector2): Line {
+        const directionVector2 = point1.sub(point0);
+        const radian = Math.atan(directionVector2.y / directionVector2.x);
+        return Line.createLineByPointAndRadian(point0, radian);
+    }
 
     private constructor(point: Vector2, radian: number) {
         this.point = point;
@@ -87,40 +131,58 @@ class Line {
         return this.k === undefined;
     }
 
-    public static createLineByPointAndRadian(point: Vector2, radian: number): Line {
-        return new Line(point, radian);
-    }
-
-    public static createLineByTwoPoint(point0: Vector2, point1: Vector2): Line {
-        const directionVector2 = point1.sub(point0);
-        const radian = Math.atan(directionVector2.y / directionVector2.x);
-        return Line.createLineByPointAndRadian(point0, radian);
-    }
-
     private getLineIntersection(another: Line): Vector2 {
-        const x = (another.b - this.b) / (this.k - another.k);
-        const y = x * this.k + this.b;
-        return new Vector2(x, y);
+        if (this.isParallel(another)) {
+            return null;
+        }
+        if (this.isVerticalLine()) {
+            return new Vector2(this.point.x, another.getY(this.point.x));
+        } else if (another.isVerticalLine()) {
+            return new Vector2(another.point.x, this.getY(another.point.x));
+        } else {
+            const x = (another.b - this.b) / (this.k - another.k);
+            const y = x * this.k + this.b;
+            return new Vector2(x, y);
+        }
+    }
+
+    public isParallel(line: Line): boolean {
+        return this.k === line.k;
     }
 
     public calcPointDistanceFromLine(point: Vector2): number {
         const verticalLine = Line.createLineByPointAndRadian(point, this.radian + Math.PI / 2);
         const intersection = this.getLineIntersection(verticalLine);
-        const sign = Math.sign(point.sub(intersection).radian());
-        return intersection.distance(point) * sign;
+        let sign;
+        const linePoint2Point = point.sub(this.point);
+        const linePoint2PointRadian = normalizeRadian(linePoint2Point.radian());
+        const radian = normalizeRadian(linePoint2PointRadian - this.radian);
+        if (radian % Math.PI === 0) {
+            sign = 0;
+        } else {
+            sign = radian > Math.PI ? -1 : 1;
+        }
+        const length = intersection.distance(point);
+        return length * sign;
     }
 
     public translationByPoint(point: Vector2): Line {
-        const b = point.y - this.k * point.x;
-        return new Line(this.k, b);
+        return new Line(point, this.radian);
     }
 
     public getY(x: number): number {
+        if (this.isVerticalLine()) {
+            throw new Error("can't get y if line is vertical");
+        }
         return this.k * x + this.b;
     }
 
     public getX(y: number): number {
-        return (y - this.b) / this.k;
+        if (this.isVerticalLine()) {
+            return this.point.x;
+        } else {
+            return (y - this.b) / this.k;
+        }
     }
 }
 
@@ -146,6 +208,10 @@ class Unit {
 
     public lockedSrc: Unit[] = [];
     public lockedTarget: Unit;
+
+    public get lockIndex(): number {
+        return this.lockedTarget.lockedSrc.indexOf(this);
+    }
 
     get destination(): Vector2 {
         return this._destination;
@@ -184,18 +250,24 @@ class Unit {
         parent.addChild(this.container);
         this.container.addChild(this.display);
         this.container.addChild(this.textField);
-        this.textField.text = this.id.toString();
+        this.textField.size = 10;
+        this.updateTextField(this.id.toString());
+        // this.display.visible = false;
+    }
+
+    private updateTextField(str: string) {
+        this.textField.text = str;
         this.textField.x = -this.textField.width / 2;
-        this.textField.y = -this.textField.height;
-        this.container.visible = false;
+        this.textField.y = -this.textField.height / 2;
     }
 
     public move() {
+        this.updateTextField(`${this.id}-${this.lockedTarget ? this.lockedTarget.id : ''}`);
         if (!this._destination) return;
         const move = this._destination.sub(this._position);
         const distance = move.length();
-        this.display.scaleX = Math.sign(move.x);
-        if (distance < 5) {
+        this.display.scaleX = move.x ? Math.sign(move.x) : 1;
+        if (distance < 1) {
             this._destination = null;
             return;
         } else {
@@ -258,7 +330,6 @@ function getLayout({
 }
 
 class Main extends egret.DisplayObjectContainer {
-    private graphics: egret.Graphics;
     private myGroup: Group;
     private enemyGroup: Group;
     private frame: number = 0;
@@ -267,6 +338,18 @@ class Main extends egret.DisplayObjectContainer {
         super();
         // this.scaleX = this.scaleY = 0.6;
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
+        // const container = new egret.DisplayObjectContainer();
+        // container.x = 400;
+        // container.y = 400;
+        // this.addChild(container);
+        // for (let i = 0; i < 6; i++) {
+        //     const pos = this.calcPositionAroundLockedTarget(i);
+        //     const textField = new egret.TextField();
+        //     container.addChild(textField);
+        //     textField.text = i.toString();
+        //     textField.x = pos.x * 30;
+        //     textField.y = pos.y * 30;
+        // }
     }
 
     private onAddToStage() {
@@ -284,7 +367,7 @@ class Main extends egret.DisplayObjectContainer {
         };
 
         this.runGame().catch(e => {
-            console.log(e);
+            console.error(e);
         });
     }
 
@@ -324,35 +407,69 @@ class Main extends egret.DisplayObjectContainer {
 
         const sprite = new egret.Sprite();
         this.addChild(sprite);
-        graphics = this.graphics = sprite.graphics;
+        graphics = sprite.graphics;
 
+        let x1, x2, y1, y2;
+        const layoutType: number = 2;
+        switch (layoutType) {
+            case 0: {
+                x1 = y1 = 100;
+                x2 = y2 = 500;
+                break;
+            }
+            // 垂直
+            case 1: {
+                x1 = x2 = 300;
+                y1 = 100;
+                y2 = 600;
+                break;
+            }
+            // 水平
+            case 2: {
+                y1 = y2 = 300;
+                x1 = 100;
+                x2 = 600;
+                break;
+            }
+        }
+
+        const count = 25;
         if (window.location.href.indexOf('random') !== -1) {
             const size = 100;
             this.myGroup = this.createGroupByRandom({
+                count: count,
                 color: 0x00ff00,
-                rect: {x: 100, y: 100, width: size, height: size},
+                rect: {x: x1, y: y1, width: size, height: size},
             });
             this.enemyGroup = this.createGroupByRandom({
+                count: count,
                 color: 0xff0000,
-                rect: {x: 700, y: 700, width: size, height: size},
+                rect: {x: x2, y: y2, width: size, height: size},
             });
         } else {
             this.myGroup = this.createGroupByLayout({
+                count: 10,
                 color: 0x00ff00,
-                groupPosition: new Vector2(500, 100)
+                groupPosition: new Vector2(x1, y1)
             });
             this.enemyGroup = this.createGroupByLayout({
+                count: 10,
                 color: 0xff0000,
-                groupPosition: new Vector2(500, 600)
+                groupPosition: new Vector2(x2, y2)
             });
         }
 
-
-        this.faceEnemy(this.myGroup, this.enemyGroup);
-        this.faceEnemy(this.enemyGroup, this.myGroup);
+        const selfSmaller = this.myGroup.units.length < this.enemyGroup.units.length;
+        if (selfSmaller) {
+            this.faceEnemy(this.myGroup, this.enemyGroup);
+            this.groupArrangeUnitEnemy(this.enemyGroup, this.myGroup);
+        } else {
+            this.faceEnemy(this.enemyGroup, this.myGroup);
+            this.groupArrangeUnitEnemy(this.myGroup, this.enemyGroup);
+        }
         this.drawUnits();
 
-        // this.update();
+        this.update();
 
         // 敌我军团寻找敌人 向敌人冲锋
         // 要碰到敌人时 进行散开
@@ -376,14 +493,14 @@ class Main extends egret.DisplayObjectContainer {
         // 进入一定范围之后 就要根据一定规则冲到对方跟前进行战斗了
     }
 
-    private createGroupByLayout({color = 0, groupPosition = new Vector2()}) {
+    private createGroupByLayout({color = 0, groupPosition = new Vector2(), count}) {
         const group = new Group();
         group.units = getLayout({
-            count: 25,
+            count,
             row: 5,
             horizontalSpacing: 30,
             verticalSpacing: 30,
-            slope: 0.5,
+            slope: 1,
         }).map(pos => {
             const unit = new Unit(this, this.createUnitDisplay(0, 0));
             unit.thickness = 1;
@@ -396,9 +513,9 @@ class Main extends egret.DisplayObjectContainer {
         return group;
     }
 
-    private createGroupByRandom({color = 0, rect: {x, y, width, height}}) {
+    private createGroupByRandom({color = 0, rect: {x, y, width, height}, count}) {
         const group = new Group();
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < count; i++) {
             const unit = new Unit(this, this.createUnitDisplay(0, 0));
             unit.thickness = 1;
             unit.color = color;
@@ -415,7 +532,7 @@ class Main extends egret.DisplayObjectContainer {
         // this.myGroup.units.forEach(unit => unit.destination = unit.position.add(new Vector2(1, 0)));
         // this.enemyGroup.units.forEach(unit => unit.destination = unit.position.add(new Vector2(-1, 0)));
 
-        this.graphics.clear();
+        graphics.clear();
 
         // if (this.frame > 120) {
         //     this.groupArrangeUnitEnemy(this.myGroup, this.enemyGroup);
@@ -423,9 +540,9 @@ class Main extends egret.DisplayObjectContainer {
         // }
 
         this.myGroup.units.concat(this.enemyGroup.units).forEach(unit => {
-            if (unit.isArrivedDestination()) {
-                return;
-            }
+            // if (unit.isArrivedDestination()) {
+            //     return;
+            // }
             if (unit.lockedTarget) {
                 unit.destination = this.calcDestination(unit, unit.lockedTarget);
             }
@@ -437,7 +554,7 @@ class Main extends egret.DisplayObjectContainer {
         });
 
         this.drawUnits();
-        this.drawUnitFoundEnemy();
+        // this.drawUnitFoundEnemy();
         this.$children.forEach((c) => {
             c.zIndex = c.y;
         });
@@ -447,11 +564,10 @@ class Main extends egret.DisplayObjectContainer {
 
     private drawUnits() {
         this.myGroup.units.concat(this.enemyGroup.units).forEach(unit => {
-            this.graphics.lineStyle(unit.thickness, unit.color);
-            this.graphics.drawCircle(unit.position.x, unit.position.y, unit.radius);
-            this.graphics.moveTo(unit.position.x, unit.position.y);
+            graphics.lineStyle(unit.thickness, unit.color);
+            graphics.drawCircle(unit.position.x, unit.position.y, unit.radius);
             if (unit.destination) {
-                this.graphics.lineTo(unit.destination.x, unit.destination.y);
+                drawLine(unit.position, unit.destination);
             }
         });
     }
@@ -473,43 +589,47 @@ class Main extends egret.DisplayObjectContainer {
      */
     private faceEnemy(myGroup: Group, enemyGroup: Group) {
         // todo 现在刚好彻底反过来了 说明距离的测算刚好倒过来了
-        this.graphics.lineStyle(1, 0x000000);
+        graphics.lineStyle(1, 0x000000);
         const myCenter = myGroup.calcGroupCenter();
-        this.graphics.drawCircle(myCenter.x, myCenter.y, 5);
+        graphics.drawCircle(myCenter.x, myCenter.y, 5);
         const enemyCenter = enemyGroup.calcGroupCenter();
-        this.graphics.drawCircle(enemyCenter.x, enemyCenter.y, 5);
+        graphics.drawCircle(enemyCenter.x, enemyCenter.y, 5);
         const connectLine = Line.createLineByTwoPoint(myCenter, enemyCenter);
-        this.graphics.moveTo(myCenter.x, myCenter.y);
-        this.graphics.lineTo(enemyCenter.x, enemyCenter.y);
-        const center = myCenter.add(enemyCenter).div(2).sub(enemyCenter.sub(myCenter).normalize().mul(20));
+        drawLine(myCenter, enemyCenter);
+        const center = myCenter.add(enemyCenter).div(2)
+        // .sub(enemyCenter.sub(myCenter).normalize().mul(20));
         const verticalLine = Line.createLineByPointAndRadian(center, Math.PI / 2 + connectLine.radian);
         const isVerticalLine = verticalLine.radian === Math.PI / 2 || verticalLine.radian === Math.PI / 2 * 3;
         if (isVerticalLine) {
-            this.graphics.moveTo(center.x, 0);
-            this.graphics.lineTo(center.x, 720);
+            graphics.moveTo(center.x, 0);
+            graphics.lineTo(center.x, 720);
         } else {
-            this.graphics.moveTo(center.x + 10, verticalLine.getY(center.x + 10));
-            this.graphics.lineTo(center.x - 10, verticalLine.getY(center.x - 10));
+            graphics.moveTo(center.x + 10, verticalLine.getY(center.x + 10));
+            graphics.lineTo(center.x - 10, verticalLine.getY(center.x - 10));
         }
         myGroup.units.forEach(unit => {
             unit.temp = connectLine.calcPointDistanceFromLine(unit.position);
-            console.log('unit.temp', unit.id, unit.temp);
         });
         myGroup.units.sort((a, b) => {
-            const diff = b.temp - a.temp;
-            // if (diff === 0) {
-            //     return verticalLine.calcPointDistanceFromLine(b.position) - verticalLine.calcPointDistanceFromLine(a.position);
-            // } else {
-            return diff;
-            // }
+            const diff = a.temp - b.temp;
+            if (diff === 0) {
+                const aa = Math.abs(verticalLine.calcPointDistanceFromLine(a.position));
+                const bb = Math.abs(verticalLine.calcPointDistanceFromLine(b.position));
+                if (a.temp > 0) {
+                    return aa - bb;
+                } else {
+                    return bb - aa;
+                }
+            } else {
+                return diff;
+            }
         });
-        console.log('myGroup.units.sort', myGroup.units.map(unit => unit.id));
-        const baseSpacing = 15;
+        const baseSpacing = 30;
         if (isVerticalLine) {
-            const startY = center.y + (myGroup.units.length - 1) * baseSpacing / 2;
+            const startY = center.y - (myGroup.units.length - 1) * baseSpacing / 2;
             myGroup.units.forEach((unit, index) => {
                 const x = center.x;
-                const y = startY - index * baseSpacing;
+                const y = startY + index * baseSpacing;
                 unit.destination = new Vector2(x, y);
             });
         } else {
@@ -530,13 +650,6 @@ class Main extends egret.DisplayObjectContainer {
         group.units.forEach(unit => this.unitFindEnemy(unit, enemyGroup.units, group, enemyGroup));
     }
 
-    // 镜像寻敌？ 连线水平镜像寻敌
-    // 突然感觉这么搞还是不行 因为根本上还是没有保证 小兵之间是分散站位的
-    // 优先选择水平射线上的目标
-    // 按照类似的感觉去寻找吗？
-    // 还是得按照水平距离上最近的
-    //
-
     private unitFindEnemy(self: Unit, enemies: Unit[], group: Group, enemyGroup: Group) {
         if (self.lockedTarget) return;
         if (enemies.length === 0) return;
@@ -554,15 +667,17 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private calcDestination(self: Unit, enemy: Unit): Vector2 {
-        const x = enemy.position.x + Math.sign(self.position.x - enemy.position.x) * 20;
-        return new Vector2(x, enemy.position.y);
+        const baseVector = this.calcPositionAroundLockedTarget(self.lockIndex);
+        baseVector.x *= 30;
+        baseVector.y *= 10;
+        return enemy.position.add(baseVector);
     }
 
     private sortEnemiesByLineDistance(self: Unit, enemies: Unit[], group: Group, enemyGroup: Group) {
         const connectLine = this.getGroupConnectLine(group, enemyGroup);
         const translationLine = connectLine.translationByPoint(self.position);
         enemies.forEach(unit => unit.temp = Math.abs(translationLine.calcPointDistanceFromLine(unit.position)));
-        enemies.sort((a, b) => a.temp - b.temp);
+        enemies.sort((a, b) => a.lockedSrc.length - b.lockedSrc.length || a.temp - b.temp);
     }
 
     private sortEnemiesByDirectlyDistance(self: Unit, enemies: Unit[]) {
@@ -579,9 +694,7 @@ class Main extends egret.DisplayObjectContainer {
     private drawUnitFoundEnemy() {
         this.myGroup.units.concat(this.enemyGroup.units).forEach((unit) => {
             if (unit.lockedTarget) {
-                this.graphics.lineStyle(1, unit.color);
-                this.graphics.moveTo(unit.position.x, unit.position.y);
-                this.graphics.lineTo(unit.lockedTarget.position.x, unit.lockedTarget.position.y);
+                drawLine(unit.position, unit.lockedTarget.position, 1, unit.color);
             }
         });
     }
@@ -590,5 +703,13 @@ class Main extends egret.DisplayObjectContainer {
         if (enemy) {
             unit.playAction('attk');
         }
+    }
+
+    private calcPositionAroundLockedTarget(index: number): Vector2 {
+        const sign = index % 2 === 0 ? 1 : -1;
+        const halfIndex = Math.floor(index / 2);
+        const halfSign = halfIndex % 2 === 0 ? -1 : 1;
+        const quarterIndex = Math.floor((halfIndex + 1) / 2);
+        return new Vector2(sign, halfSign * quarterIndex);
     }
 }
